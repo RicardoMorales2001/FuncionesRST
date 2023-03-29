@@ -6,7 +6,7 @@ FuncionesRS: a demo package
 
 ## Installation and loading
 
-#### Install the latest version from [GitHub] (https://github.com/RicardoMorales2001/FuncionesRS) as follow:
+#### Install the latest version from [GitHub] (https://github.com/RicardoMorales2001/FuncionesRST) as follow:
 
 
 # Install
