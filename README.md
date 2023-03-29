@@ -24,7 +24,8 @@ Distribution of functions in the package
 ### Create some data format
 # :::::::::::::::::::::::::::::::::::::::::::::::::::
 set.seed(1234)
-#### x <- c(1, 2, 3, 4, 5)
-#### y <- c(3, 5, 7, 9, 11)
-#### reg_lineal(x, y)
-#### Intercept x= 2
+x <- c(95, 85, 72.5, 60, 15, 25, 2, 3, 4, 5)
+y <- c(75, 25, 12.5, 18, 20, 26, 2, 4, 5, 6)
+reg_lineal(x, y)
+
+
