@@ -12,3 +12,6 @@ LazyData: true
 RoxygenNote: 7.2.3
 URL: https://github.com/RicardoMorales2001/FuncionesRST
 BugReports: https://github.com/RicardoMorales2001/FuncionesRST/issues
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
