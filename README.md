@@ -22,9 +22,9 @@
 
 ## *1st function: simple linear regression*
 
-### library(FuncionesCursoR)
+### library(FuncionesRST)
 
-Loading required package: ggplot2; dplyr; testthat; tidyverse
+Loading required package: dplyr; testthat; tidyverse
 
 ### Explanation and description
 
@@ -80,9 +80,33 @@ Coefficients:
 
 ![](images/R2plot.png){width="540"}
 
-## 
+## *2nd function: multiple linear regression*
 
-*2nd function: multiple linear regression*
+### Library(FuncionesRST)
+
+Loading required package: dplyr, testthat, tidyverse
+
+### Explanation and description
+
+The multi_reg function is used to fit a multiple linear regression model to a data set. It takes three arguments:
+
+-   data: a data frame containing the dependent and independent variables.
+
+-   dependent_var -- The name of the dependent variable to use in the model.
+
+-   independent_vars -- A list of independent variable names to use in the model.
+
+The function performs some checks to make sure that the arguments have been supplied correctly. First, it checks that data is a dataframe. If not, the execution of the function is stopped with an error message.
+
+Next, it checks if the dependent variable (dependent_var) exists in the dataframe. If not, the function stops and displays an error message that the variable does not exist.
+
+It then verifies that all supplied independent_vars exist in the dataframe. If any of the variables does not exist, the execution of the function is stopped with an error message.
+
+After the checks, the function builds a formula for the multiple linear regression model using the supplied dependent and independent variables. Use the paste function to combine the variables into a string and create the formula.
+
+It then uses the **lm** function to fit the multiple linear regression model to the given data. The function returns a linear model object (model) that is used to perform the analysis.
+
+Finally, the function prints a summary of the model using the summary function and plots the fitted values against the actual values using the plot function. The function returns the model object (model).
 
 ## Lifecycle
 
