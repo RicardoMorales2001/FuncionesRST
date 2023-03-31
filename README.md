@@ -276,7 +276,7 @@ my_corr_plot(mtcars, "mpg", "wt")
 -0.8676594
 ```
 
-![](images/correlacion2.png)
+![](images/c2Rplot.png)
 
 ## Lifecycle
 
