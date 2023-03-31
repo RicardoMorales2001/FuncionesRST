@@ -13,7 +13,7 @@
 
 <meta name="date" content="2023-03-30" />
 
-<title>FuncionesRST</title>
+<title>General information and basic guides for RStudio</title>
 
 <script src="site_libs/header-attrs-2.21/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -255,6 +255,8 @@ $(document).ready(function () {
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <span class="fa fa-home"></span>
+     
     Information
      
     <span class="caret"></span>
@@ -286,94 +288,57 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">FuncionesRST</h1>
+<h1 class="title toc-ignore">General information and basic guides for
+RStudio</h1>
 <h4 class="author">Ricardo Morales</h4>
 <h4 class="date">2023-03-30</h4>
 
 </div>
 
 
-<p><img src="images/640px-Logotipo_Ikiam-01.png" width="407" /></p>
-<div id="funcionesrst-a-demo-package" class="section level1">
-<h1>FuncionesRST: a demo package</h1>
-<div id="this-is-a-demo-package-from-r4ds-tutorial"
-class="section level2">
-<h2>This is a demo package from R4DS tutorial</h2>
-<p><strong><em>Any contact suggestion to the following email “<a
-href="mailto:angel.morales@est.ikiam.edu.ec"
-class="email">angel.morales@est.ikiam.edu.ec</a>”</em></strong></p>
+<p><img src="images/640px-Logotipo_Ikiam-05.png" /></p>
+<div id="general-information" class="section level1">
+<h1>General information</h1>
+<p>The following is general information about the functions found within
+the RSTFunctions package.</p>
+<p>The “reg_linear” function will not allow you to fit a simple linear
+regression and display the regression line in a scatterplot. This can be
+useful for identifying patterns in the data and for identifying possible
+relationships between variables. The function also provides information
+about the fitted model, such as regression coefficients and fit
+statistics.</p>
+<p>The “multi_reg” function will allow us to perform a multiple linear
+regression and obtain information about the relationship between the
+dependent variable and the independent variables. If the proper column
+names hold, the function will return a linear regression model that we
+can use to make predictions on new data. The function also provides a
+model summary that includes fit statistics and the coefficients for each
+independent variable.</p>
+<p>Finally, the “my_corr_plot” function will help us visualize the
+matches between two variables, which can help us understand the
+relationship between them. If the appropriate column names are provided,
+the function displays a scatter chart with a trend line and the
+corresponding match value. This can be useful for identifying patterns
+in the data and for identifying possible relationships between
+variables.</p>
+<p>In summary, using these three functions, we can obtain general
+information about a data set, including the relationships between
+variables and the ability to make predictions with a linear regression
+model.</p>
 </div>
-<div id="installation-and-loading" class="section level2">
-<h2>Installation and loading</h2>
-<p>Install the latest version from [GitHub] (<a
-href="https://github.com/RicardoMorales2001/FuncionesRST"
-class="uri">https://github.com/RicardoMorales2001/FuncionesRST</a>) as
-follow:</p>
-</div>
-<div id="installing-rstudio-and-the-rst-functions-package"
-class="section level2">
-<h2>Installing RStudio and the RST Functions package</h2>
-<p>The following code will help to download the devtools package which
-will help in downloading the RST Functions library</p>
-<pre class="r"><code>if(!require(devtools)) install.packages(&quot;devtools&quot;)</code></pre>
-<p>Subsequently, the following code will be used to download this
-package</p>
-<pre class="r"><code>devtools::install_github(&quot;https://github.com/RicardoMorales2001/FuncionesRST&quot;)</code></pre>
-<pre><code>## ── R CMD build ──────────────────────────────────────────────────────────────────────────────────────────
-##   
-  
-  
-   checking for file &#39;C:\Users\Ricardo Morales\AppData\Local\Temp\RtmpSYetj8\remotes299034ee1437\RicardoMorales2001-FuncionesRST-3de40c3/DESCRIPTION&#39; ...
-  
-   checking for file &#39;C:\Users\Ricardo Morales\AppData\Local\Temp\RtmpSYetj8\remotes299034ee1437\RicardoMorales2001-FuncionesRST-3de40c3/DESCRIPTION&#39; ... 
-  
-✔  checking for file &#39;C:\Users\Ricardo Morales\AppData\Local\Temp\RtmpSYetj8\remotes299034ee1437\RicardoMorales2001-FuncionesRST-3de40c3/DESCRIPTION&#39; (387ms)
-## 
-  
-  
-  
-─  preparing &#39;FuncionesRST&#39;: (444ms)
-##    checking DESCRIPTION meta-information ...
-  
-✔  checking DESCRIPTION meta-information
-## 
-  
-  
-  
-─  checking for LF line-endings in source and make files and shell scripts
-## 
-  
-  
-  
-─  checking for empty or unneeded directories
-## 
-  
-   Omitted &#39;LazyData&#39; from DESCRIPTION
-## 
-  
-  
-  
-─  building &#39;FuncionesRST_0.1.0.tar.gz&#39;
-## 
-  
-   
-## </code></pre>
-<p>Once this process is done we will be able to use the functions loaded
-in said package.</p>
-<p><strong><em>Note: if it is your first time working in the RStudio
-environment, I will leave you with a series of tutorials in Spanish
-which will guide you in installing the same R and RStudio program, as
-well as downloading packages and libraries.</em></strong></p>
-<p>Here is a tutorial which can help you install the RStudio program in
-case you do not have it installed, this video is courtesy of the Sean
-Reyes channel</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/nVrm5Jf1dPk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-</iframe>
-<p>Tutorial to download packages and libraries courtesy of the channel
-Rafa Gonzalez Gouveia.</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Bay9FTIJaiY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-</iframe>
-</div>
+<div id="guides" class="section level1">
+<h1>Guides</h1>
+<p><strong>In this part I provide you with some links that will be very
+useful to advance in the management of Rstudio</strong></p>
+<ul>
+<li><p><a href="https://cran.r-project.org/doc/contrib/rdebuts_es.pdf"
+class="uri">https://cran.r-project.org/doc/contrib/rdebuts_es.pdf</a></p></li>
+<li><p><a href="https://fhernanb.github.io/Manual-de-R/"
+class="uri">https://fhernanb.github.io/Manual-de-R/</a></p></li>
+<li><p><a
+href="https://bookdown.org/gboccardo/manual-ED-UCH/uso-basico-de-rstudio.html"
+class="uri">https://bookdown.org/gboccardo/manual-ED-UCH/uso-basico-de-rstudio.html</a></p></li>
+</ul>
 </div>
 
 
