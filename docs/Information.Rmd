@@ -1,0 +1,30 @@
+---
+title: "General information and basic guides for RStudio"
+author: "Ricardo Morales"
+date: "2023-03-30"
+output: html_document
+---
+
+![](images/640px-Logotipo_Ikiam-05.png)
+
+# General information
+
+The following is general information about the functions found within the RSTFunctions package.
+
+The "reg_linear" function will not allow you to fit a simple linear regression and display the regression line in a scatterplot. This can be useful for identifying patterns in the data and for identifying possible relationships between variables. The function also provides information about the fitted model, such as regression coefficients and fit statistics.
+
+The "multi_reg" function will allow us to perform a multiple linear regression and obtain information about the relationship between the dependent variable and the independent variables. If the proper column names hold, the function will return a linear regression model that we can use to make predictions on new data. The function also provides a model summary that includes fit statistics and the coefficients for each independent variable.
+
+Finally, the "my_corr_plot" function will help us visualize the matches between two variables, which can help us understand the relationship between them. If the appropriate column names are provided, the function displays a scatter chart with a trend line and the corresponding match value. This can be useful for identifying patterns in the data and for identifying possible relationships between variables.
+
+In summary, using these three functions, we can obtain general information about a data set, including the relationships between variables and the ability to make predictions with a linear regression model.
+
+# Guides
+
+**In this part I provide you with some links that will be very useful to advance in the management of Rstudio**
+
+-   <https://cran.r-project.org/doc/contrib/rdebuts_es.pdf>
+
+-   <https://fhernanb.github.io/Manual-de-R/>
+
+-   <https://bookdown.org/gboccardo/manual-ED-UCH/uso-basico-de-rstudio.html>

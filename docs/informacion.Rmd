@@ -1,8 +1,0 @@
----
-title: "Autor y contacto"
-author: "Ricardo Morales"
-date: "2023-03-30"
-output: html_document
----
-
-
