@@ -35,37 +35,8 @@ Finally, the function prints a summary of the model using the summary function a
 
 ### Example
 
-```{r message=FALSE, warning=FALSE}
+```{r}
+library("FuncionesRST")
 data <- data.frame(x1 = c(1, 2, 3, 4, 5), x2 = c(2, 4, 6, 8, 10), y = c(3, 6, 8, 10, 12))
 multi_reg(data = data, dependent_var = "y", independent_vars = c("x1", "x2"))
 ```
-
-```         
-Call:
-lm(formula = formula, data = data)
-
-Residuals:
-         1          2          3          4          5 
--4.000e-01  4.000e-01  2.000e-01 -3.053e-16 -2.000e-01 
-
-Coefficients: (1 not defined because of singularities)
-            Estimate Std. Error t value Pr(>|t|)    
-(Intercept)   1.2000     0.3830   3.133 0.051929 .  
-x1            2.2000     0.1155  19.053 0.000316 ***
-x2                NA         NA      NA       NA    
----
-Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
-
-Residual standard error: 0.3651 on 3 degrees of freedom
-Multiple R-squared:  0.9918,	Adjusted R-squared:  0.9891 
-F-statistic:   363 on 1 and 3 DF,  p-value: 0.0003157
-
-```
-
-![](images/RLM.png)
-Call:
-lm(formula = formula, data = data)
-
-Coefficients:
-(Intercept) x1 x2
-1.2 2.2 NA

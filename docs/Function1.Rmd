@@ -9,7 +9,9 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# ***1st function: simple linear regression*** 
+![](images/640px-Logotipo_Ikiam-02.png)
+
+# ***1st function: simple linear regression***
 
 # Description
 
