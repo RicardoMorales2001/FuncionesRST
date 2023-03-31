@@ -1,0 +1,10 @@
+name: "website"
+output_dir : "."
+navbar:
+  title: "FuncionesRST"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "informacion"
+      href: informacion.html
+

@@ -193,7 +193,7 @@ Coefficients:
 
 Loading required package: dplyr, testthat, tidyverse
 
-### Explanation and description 
+### Explanation and description
 
 The my_corr_plot function is a function in R that generates a scatterplot and calculates the correlation between two numeric variables in a dataframe. The function takes three arguments: the dataframe data, and the names of the two numeric variables x_var and y_var.
 

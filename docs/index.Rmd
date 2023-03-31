@@ -1,0 +1,48 @@
+![](images/640px-Logotipo_Ikiam-01.png){width="407"}
+
+---
+title: "FuncionesRST"
+author: "Ricardo Morales"
+date: "2023-03-30"
+output: html_document
+---
+
+# FuncionesRST: a demo package
+
+## This is a demo package from R4DS tutorial
+
+***Any contact suggestion to the following email "[angel.morales\@est.ikiam.edu.ec](mailto:angel.morales@est.ikiam.edu.ec){.email}"***
+
+## Installation and loading
+
+Install the latest version from [GitHub] (<https://github.com/RicardoMorales2001/FuncionesRST>) as follow:
+
+## Installing RStudio and the RST Functions package
+
+The following code will help to download the devtools package which will help in downloading the RST Functions library
+
+```{r message=FALSE, warning=FALSE}
+if(!require(devtools)) install.packages("devtools")
+```
+
+Subsequently, the following code will be used to download this package
+
+```{r warning=FALSE}
+devtools::install_github("https://github.com/RicardoMorales2001/FuncionesRST")
+```
+
+Once this process is done we will be able to use the functions loaded in said package.
+
+***Note: if it is your first time working in the RStudio environment, I will leave you with a series of tutorials in Spanish which will guide you in installing the same R and RStudio program, as well as downloading packages and libraries.***
+
+Here is a tutorial which can help you install the RStudio program in case you do not have it installed, this video is courtesy of the Sean Reyes channel
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nVrm5Jf1dPk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+
+</iframe>
+
+Tutorial to download packages and libraries courtesy of the channel Rafa Gonzalez Gouveia.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Bay9FTIJaiY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+
+</iframe>
