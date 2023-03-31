@@ -9,7 +9,7 @@ output: html_document
 
 ## This is a demo package from R4DS tutorial.
 
-##### Any contact suggestion to the following email "[angel.morales\@est.ikiam.edu.ec](mailto:angel.morales@est.ikiam.edu.ec){.email}"
+##### Any contact suggestion to the following email "[angel.morales\@est.ikiam.edu.ec](mailto:angel.morales@est.ikiam.edu.ec)"
 
 ## Installation and loading
 
