@@ -3,13 +3,12 @@ title: "Function 1"
 author: "Ricardo Morales"
 date: "2023-03-31"
 output: html_document
+theme: cosmo
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-
-![](images/640px-Logotipo_Ikiam-11.png)
 
 # ***1st function: simple linear regression***
 

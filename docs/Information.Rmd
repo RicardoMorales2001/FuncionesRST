@@ -3,6 +3,7 @@ title: "General information and basic guides for RStudio"
 author: "Ricardo Morales"
 date: "2023-03-30"
 output: html_document
+theme: cosmo
 ---
 
 ![](images/640px-Logotipo_Ikiam-05.png)
@@ -28,3 +29,5 @@ In summary, using these three functions, we can obtain general information about
 -   <https://fhernanb.github.io/Manual-de-R/>
 
 -   <https://bookdown.org/gboccardo/manual-ED-UCH/uso-basico-de-rstudio.html>
+
+-   <https://bookdown.org/yihui/rmarkdown/rmarkdown-site.html>

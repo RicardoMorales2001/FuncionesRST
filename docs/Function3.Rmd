@@ -3,6 +3,7 @@ title: "Function 3"
 author: "Ricardo Morales"
 date: "2023-03-31"
 output: html_document
+theme: cosmo
 ---
 
 ```{r setup, include=FALSE}

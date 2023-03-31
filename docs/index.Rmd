@@ -3,6 +3,7 @@ title: "FuncionesRST"
 author: "Ricardo Morales"
 date: "2023-03-30"
 output: html_document
+theme: cosmo
 ---
 
 # FuncionesRST: a demo package
