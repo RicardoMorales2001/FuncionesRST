@@ -1,21 +1,12 @@
----
-editor_options: 
-  markdown: 
-    wrap: 72
-output: html_document
----
-
 # FuncionesRST: a demo package
 
 ## This is a demo package from R4DS tutorial.
 
-*Any contact suggestion to the following email
-"[angel.morales\@est.ikiam.edu.ec](mailto:angel.morales@est.ikiam.edu.ec)"*
+*Any contact suggestion to the following email "[angel.morales\@est.ikiam.edu.ec](mailto:angel.morales@est.ikiam.edu.ec)"*
 
 ## Installation and loading
 
-**Install the latest version from [GitHub]
-(<https://github.com/RicardoMorales2001/FuncionesRST>) as follow:**
+**Install the latest version from [GitHub] (<https://github.com/RicardoMorales2001/FuncionesRST>) as follow:**
 
 # Install
 
@@ -27,8 +18,7 @@ output: html_document
 
 #### **Import**
 
--   ***To work with this package make sure to import: dplyr; testthat;
-    tidyverse***
+-   ***To work with this package make sure to import: dplyr; testthat; tidyverse***
 
 -   ***Next you call the library: library(FuncionesRST)***
 
@@ -36,35 +26,19 @@ output: html_document
 
 ### Explanation and description
 
-The reg_linear function is a function in R that performs a linear
-regression between two vectors x and y. The main purpose of the function
-is to fit a straight line to a two-dimensional (x,y) data set and to
-display the straight line fit along with the data on a graph.
+The reg_linear function is a function in R that performs a linear regression between two vectors x and y. The main purpose of the function is to fit a straight line to a two-dimensional (x,y) data set and to display the straight line fit along with the data on a graph.
 
-The function starts with an if statement to make sure that the vectors x
-and y have the same length. If not, the function issues an error message
-and stops.
+The function starts with an if statement to make sure that the vectors x and y have the same length. If not, the function issues an error message and stops.
 
-The function then uses the lm function of R to fit a simple linear
-regression model of y on x. The lm function takes a formula as an
-argument, in which the independent variable (x) is to the right of the
-tilde (\~) and the dependent variable (y) is to the left.
+The function then uses the lm function of R to fit a simple linear regression model of y on x. The lm function takes a formula as an argument, in which the independent variable (x) is to the right of the tilde (\~) and the dependent variable (y) is to the left.
 
-After fitting the model, the function uses the plot function to plot the
-data, with x-values on the horizontal axis and y-values on the vertical
-axis. The abline function is used to add the fitted regression line to
-the plot, using the fitted linear regression model as an argument and
-setting the color of the line to red.
+After fitting the model, the function uses the plot function to plot the data, with x-values on the horizontal axis and y-values on the vertical axis. The abline function is used to add the fitted regression line to the plot, using the fitted linear regression model as an argument and setting the color of the line to red.
 
-Finally, the function returns the fitted linear regression model. This
-allows the user to inspect the model fit results and obtain information
-such as the fitted regression line coefficients, the fitted y values for
-any value of x, and model statistics.
+Finally, the function returns the fitted linear regression model. This allows the user to inspect the model fit results and obtain information such as the fitted regression line coefficients, the fitted y values for any value of x, and model statistics.
 
 ### 1st example
 
-This example uses simple vectors as data, the next example will use data
-from the mtcars library available in RStudio
+This example uses simple vectors as data, the next example will use data from the mtcars library available in RStudio
 
 ```{r}
 x <- c(95, 85, 72.5, 60, 15, 25, 2, 3, 4, 5)
@@ -106,42 +80,25 @@ Coefficients:
 
 ### Description
 
-The multi_reg function is used to fit a multiple linear regression model
-to a data set. It takes three arguments:
+The multi_reg function is used to fit a multiple linear regression model to a data set. It takes three arguments:
 
--   data: a data frame containing the dependent and independent
-    variables.
+-   data: a data frame containing the dependent and independent variables.
 
--   dependent_var \-- The name of the dependent variable to use in the
-    model.
+-   dependent_var \-- The name of the dependent variable to use in the model.
 
--   independent_vars \-- A list of independent variable names to use in
-    the model.
+-   independent_vars \-- A list of independent variable names to use in the model.
 
-The function performs some checks to make sure that the arguments have
-been supplied correctly. First, it checks that data is a dataframe. If
-not, the execution of the function is stopped with an error message.
+The function performs some checks to make sure that the arguments have been supplied correctly. First, it checks that data is a dataframe. If not, the execution of the function is stopped with an error message.
 
-Next, it checks if the dependent variable (dependent_var) exists in the
-dataframe. If not, the function stops and displays an error message that
-the variable does not exist.
+Next, it checks if the dependent variable (dependent_var) exists in the dataframe. If not, the function stops and displays an error message that the variable does not exist.
 
-It then verifies that all supplied independent_vars exist in the
-dataframe. If any of the variables does not exist, the execution of the
-function is stopped with an error message.
+It then verifies that all supplied independent_vars exist in the dataframe. If any of the variables does not exist, the execution of the function is stopped with an error message.
 
-After the checks, the function builds a formula for the multiple linear
-regression model using the supplied dependent and independent variables.
-Use the paste function to combine the variables into a string and create
-the formula.
+After the checks, the function builds a formula for the multiple linear regression model using the supplied dependent and independent variables. Use the paste function to combine the variables into a string and create the formula.
 
-It then uses the lm function to fit the multiple linear regression model
-to the given data. The function returns a linear model object (model)
-that is used to perform the analysis.
+It then uses the lm function to fit the multiple linear regression model to the given data. The function returns a linear model object (model) that is used to perform the analysis.
 
-Finally, the function prints a summary of the model using the summary
-function and plots the fitted values against the actual values using the
-plot function. The function returns the model object (model).
+Finally, the function prints a summary of the model using the summary function and plots the fitted values against the actual values using the plot function. The function returns the model object (model).
 
 ### 1st Example
 
@@ -183,8 +140,7 @@ Coefficients:
 
 ### 2nd example
 
-The following example uses data loaded from RStudio, in this case the
-database is mtcars
+The following example uses data loaded from RStudio, in this case the database is mtcars
 
 ```{r}
 data(mtcars)
@@ -226,24 +182,11 @@ Coefficients:
 
 ### Explanation and description
 
-The my_corr_plot function is a function in R that generates a
-scatterplot and calculates the correlation between two numeric variables
-in a dataframe. The function takes three arguments: the dataframe data,
-and the names of the two numeric variables x_var and y_var.
+The my_corr_plot function is a function in R that generates a scatterplot and calculates the correlation between two numeric variables in a dataframe. The function takes three arguments: the dataframe data, and the names of the two numeric variables x_var and y_var.
 
-The function starts with three checks. The first checks that the data
-argument is a dataframe; if it is not, execution is halted and an error
-message is displayed indicating that data must be a dataframe. The next
-two checks verify that x_var and y_var are column names in data; if any
-of them does not exist, the execution is stopped and an error message is
-displayed indicating the name of the column that does not exist.
+The function starts with three checks. The first checks that the data argument is a dataframe; if it is not, execution is halted and an error message is displayed indicating that data must be a dataframe. The next two checks verify that x_var and y_var are column names in data; if any of them does not exist, the execution is stopped and an error message is displayed indicating the name of the column that does not exist.
 
-After the checks, the function calculates the correlation between the
-two numeric variables using the cor function. Next, create a scatterplot
-using ggplot with the two numeric variables specified in x_var and
-y_var. The chart title includes the correlation rounded to two decimal
-places. Finally, the function prints the graph and returns the value of
-the calculated correlation.
+After the checks, the function calculates the correlation between the two numeric variables using the cor function. Next, create a scatterplot using ggplot with the two numeric variables specified in x_var and y_var. The chart title includes the correlation rounded to two decimal places. Finally, the function prints the graph and returns the value of the calculated correlation.
 
 ### 1st example
 
@@ -264,9 +207,7 @@ my_corr_plot(df, "x", "y")
 
 ### 2nd example
 
-The following example uses data loaded from RStudio, in this case the
-database is mtcars, the use of this database is given to facilitate the
-example.
+The following example uses data loaded from RStudio, in this case the database is mtcars, the use of this database is given to facilitate the example.
 
 ```{r}
 my_corr_plot(mtcars, "mpg", "wt")
@@ -280,11 +221,6 @@ my_corr_plot(mtcars, "mpg", "wt")
 
 ## Lifecycle
 
-FunctionsRST is the first version of a set of functions which were
-created with the purpose of being able to automate repetitive processes
-when processing data. It is expected over time to implement things in
-this package, be it new functions or arguments. The change in the
-already existing functions could be given for a better operation or
-improving its functionality.
+FunctionsRST is the first version of a set of functions which were created with the purpose of being able to automate repetitive processes when processing data. It is expected over time to implement things in this package, be it new functions or arguments. The change in the already existing functions could be given for a better operation or improving its functionality.
 
 Thank you very much for using this package.
