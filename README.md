@@ -209,8 +209,6 @@ my_corr_plot(df, "x", "y")
 
 ### 2nd example
 
-![](images/correlacion2.png)
-
 The following example uses data loaded from RStudio, in this case the database is mtcars, the use of this database is given to facilitate the example.
 
 ```{r}
@@ -220,6 +218,8 @@ my_corr_plot(mtcars, "mpg", "wt")
 ```         
 -0.8676594 
 ```
+
+![](images/cr87.png)
 
 ## Lifecycle
 
