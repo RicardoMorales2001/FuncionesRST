@@ -272,11 +272,11 @@ example.
 my_corr_plot(mtcars, "mpg", "wt")
 ```
 
+![](images/c2Rplot.png)
+
 ```         
 -0.8676594
 ```
-
-![](images/c2Rplot.png)
 
 ## Lifecycle
 
