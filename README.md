@@ -218,11 +218,9 @@ my_corr_plot(mtcars, "mpg", "wt")
 ```         
 -0.8676594 
 ```
+![](images/correlacion2.png
 
 ## Lifecycle
-
-![](images/correlacion2.png)
-
 FunctionsRST is the first version of a set of functions which were created with the purpose of being able to automate repetitive processes when processing data. It is expected over time to implement things in this package, be it new functions or arguments. The change in the already existing functions could be given for a better operation or improving its functionality.
 
 Thank you very much for using this package.
