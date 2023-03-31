@@ -1,0 +1,43 @@
+---
+title: "Function 1"
+author: "Ricardo Morales"
+date: "2023-03-31"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# ***1st function: simple linear regression***
+
+### Description
+
+The reg_linear function is a function in R that performs a linear regression between two vectors x and y. The main purpose of the function is to fit a straight line to a two-dimensional (x,y) data set and display the fit of the straight line along with the data on a graph.
+
+The function starts with an if statement to make sure that the vectors x and y have the same length. If not, the function issues an error message and stops.
+
+The function then uses the lm function of R to fit a simple linear regression model of y on x. The lm function takes as its argument a formula, in which the independent variable (x) is to the right of the tilde (\~) and the dependent variable (y) is to the left.
+
+After fitting the model, the function uses the plot function to plot the data, with x-values on the horizontal axis and y-values on the vertical axis. The abline function is used to add the fitted regression line to the plot, using the fitted linear regression model as an argument and setting the color of the line to red.
+
+Finally, the function returns the fitted linear regression model. This allows the user to inspect the results of the model fit and obtain information such as fitted regression line coefficients, fitted y-values for any value of x, and model statistics.
+
+### Example
+
+```{r}
+x <- c(95, 85, 72.5, 60, 15, 25, 2, 3, 4, 52, 100, 47, 37, 27, 99, 45)
+y <- c(75, 25, 12.5, 18, 20, 26, 2, 4, 5, 60, 100, 85, 96, 35, 66, 45) 
+reg_lineal(x, y)
+```
+
+```         
+Call:
+lm(formula = y ~ x)
+
+Coefficients:
+(Intercept)            x  
+    15.3487       0.5581 
+```
+
+![](images/RGL1plot.png)

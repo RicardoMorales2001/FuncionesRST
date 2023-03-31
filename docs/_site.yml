@@ -4,7 +4,17 @@ navbar:
   title: "FuncionesRST"
   left:
     - text: "Home"
+      icon: fa-home
       href: index.html
     - text: "informacion"
-      href: informacion.html
+      menu:
+         - text: "informacion"
+           href: informacion.html
+         - text: "Function 1"
+           href: Function1.html
+         - text: "Function 2"
+           href: Function2.html
+         - text: "Function 3"
+           href: Function3.html
+
 

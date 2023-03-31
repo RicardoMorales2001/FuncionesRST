@@ -27,7 +27,7 @@ if(!require(devtools)) install.packages("devtools")
 
 Subsequently, the following code will be used to download this package
 
-```{r warning=FALSE}
+```{r message=FALSE, warning=FALSE}
 devtools::install_github("https://github.com/RicardoMorales2001/FuncionesRST")
 ```
 

@@ -34,6 +34,8 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-6.2.1/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.2.1/css/v4-shims.min.css" rel="stylesheet" />
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -245,10 +247,32 @@ $(document).ready(function () {
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="index.html">Home</a>
+  <a href="index.html">
+    <span class="fa fa-home"></span>
+     
+    Home
+  </a>
 </li>
-<li>
-  <a href="informacion.html">informacion</a>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    informacion
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="informacion.html">informacion</a>
+    </li>
+    <li>
+      <a href="Function1.html">Function 1</a>
+    </li>
+    <li>
+      <a href="Function2.html">Function 2</a>
+    </li>
+    <li>
+      <a href="Function3.html">Function 3</a>
+    </li>
+  </ul>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -295,11 +319,6 @@ will help in downloading the RST Functions library</p>
 <p>Subsequently, the following code will be used to download this
 package</p>
 <pre class="r"><code>devtools::install_github(&quot;https://github.com/RicardoMorales2001/FuncionesRST&quot;)</code></pre>
-<pre><code>## WARNING: Rtools is required to build R packages, but is not currently installed.
-## 
-## Please download and install Rtools 4.2 from https://cran.r-project.org/bin/windows/Rtools/ or https://www.r-project.org/nosvn/winutf8/ucrt3/.</code></pre>
-<pre><code>## Skipping install of &#39;FuncionesRST&#39; from a github remote, the SHA1 (9648e5b0) has not changed since last install.
-##   Use `force = TRUE` to force installation</code></pre>
 <p>Once this process is done we will be able to use the functions loaded
 in said package.</p>
 <p><strong><em>Note: if it is your first time working in the RStudio
