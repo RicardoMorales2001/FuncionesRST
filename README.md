@@ -215,7 +215,7 @@ The following example uses data loaded from RStudio, in this case the database i
 my_corr_plot(mtcars, "mpg", "wt")
 ```
 
-![](images/c2Rplot.png)
+![](images/c2Rplot.png){width="401"}
 
 ```         
 -0.8676594 
