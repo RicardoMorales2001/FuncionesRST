@@ -6,11 +6,10 @@ navbar:
     - text: "Home"
       icon: fa-home
       href: index.html
-    - text: "informacion"
-      icon: fa-home
+    - text: "Information"
       menu:
-         - text: "informacion"
-           href: informacion.html
+         - text: "Information"
+           href: Information.html
          - text: "Function 1"
            href: Function1.html
          - text: "Function 2"
