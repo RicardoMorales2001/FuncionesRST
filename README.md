@@ -1,3 +1,5 @@
+# ![](images/640px-Logotipo_Ikiam.png)
+
 # FuncionesRST: a demo package
 
 ## This is a demo package from R4DS tutorial.

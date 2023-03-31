@@ -4,6 +4,7 @@ author: "Ricardo Morales"
 date: "2023-03-31"
 output: html_document
 theme: cosmo
+css: style.css
 ---
 
 ```{r setup, include=FALSE}
