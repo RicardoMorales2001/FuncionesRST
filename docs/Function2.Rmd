@@ -11,8 +11,6 @@ css: style.css
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-![](images/640px-Logotipo_Ikiam-09.png)
-
 # ***2nd function: multiple linear regression***
 
 ### Description

@@ -11,8 +11,6 @@ css: style.css
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-![](images/640px-Logotipo_Ikiam-10.png)
-
 # ***3rd function: correlation function***
 
 ### Description

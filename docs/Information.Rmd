@@ -7,8 +7,6 @@ theme: cosmo
 css: style.css
 ---
 
-![](images/640px-Logotipo_Ikiam-05.png)
-
 # General information
 
 The following is general information about the functions found within the RSTFunctions package.

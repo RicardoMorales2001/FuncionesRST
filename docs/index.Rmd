@@ -4,6 +4,7 @@ author: "Ricardo Morales"
 date: "2023-03-30"
 output: html_document
 theme: cosmo
+css: style.css
 ---
 
 # FuncionesRST: a demo package
@@ -26,9 +27,7 @@ if(!require(devtools)) install.packages("devtools")
 
 Subsequently, the following code will be used to download this package
 
-```{r message=FALSE, warning=FALSE}
-devtools::install_github("https://github.com/RicardoMorales2001/FuncionesRST")
-```
+-   ***devtools::install_github("[https://github.com/RicardoMorales2001/FuncionesRST")](https://github.com/RicardoMorales2001/FuncionesRST"))***
 
 Once this process is done we will be able to use the functions loaded in said package.
 
