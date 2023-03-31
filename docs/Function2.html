@@ -11,9 +11,9 @@
 
 <meta name="author" content="Ricardo Morales" />
 
-<meta name="date" content="2023-03-30" />
+<meta name="date" content="2023-03-31" />
 
-<title>Autor y contacto</title>
+<title>Function 2</title>
 
 <script src="site_libs/header-attrs-2.21/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -288,14 +288,83 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Autor y contacto</h1>
+<h1 class="title toc-ignore">Function 2</h1>
 <h4 class="author">Ricardo Morales</h4>
-<h4 class="date">2023-03-30</h4>
+<h4 class="date">2023-03-31</h4>
 
 </div>
 
 
-
+<div id="nd-function-multiple-linear-regression" class="section level1">
+<h1><strong><em>2nd function: multiple linear
+regression</em></strong></h1>
+<div id="description" class="section level3">
+<h3>Description</h3>
+<p>The multi_reg function is used to fit a multiple linear regression
+model to a data set. It takes three arguments:</p>
+<p>data: a data frame containing the dependent and independent
+variables.</p>
+<p>dependent_var -- The name of the dependent variable to use in the
+model.</p>
+<p>independent_vars -- A list of independent variable names to use in
+the model.</p>
+<p>The function performs some checks to make sure that the arguments
+have been supplied correctly. First, it checks that data is a dataframe.
+If not, the execution of the function is stopped with an error
+message.</p>
+<p>Next, it checks if the dependent variable (dependent_var) exists in
+the dataframe. If not, the function stops and displays an error message
+that the variable does not exist.</p>
+<p>It then verifies that all supplied independent_vars exist in the
+dataframe. If any of the variables does not exist, the execution of the
+function is stopped with an error message.</p>
+<p>After the checks, the function builds a formula for the multiple
+linear regression model using the supplied dependent and independent
+variables. Use the paste function to combine the variables into a string
+and create the formula.</p>
+<p>It then uses the lm function to fit the multiple linear regression
+model to the given data. The function returns a linear model object
+(model) that is used to perform the analysis.</p>
+<p>Finally, the function prints a summary of the model using the summary
+function and plots the fitted values against the actual values using the
+plot function. The function returns the model object (model).</p>
+</div>
+<div id="example" class="section level3">
+<h3>Example</h3>
+<pre class="r"><code>library(&quot;FuncionesRST&quot;)</code></pre>
+<pre><code>## Warning: replacing previous import &#39;dplyr::matches&#39; by &#39;testthat::matches&#39; when
+## loading &#39;FuncionesRST&#39;</code></pre>
+<pre class="r"><code>data &lt;- data.frame(x1 = c(1, 2, 3, 4, 5), x2 = c(2, 4, 6, 8, 10), y = c(3, 6, 8, 10, 12))
+multi_reg(data = data, dependent_var = &quot;y&quot;, independent_vars = c(&quot;x1&quot;, &quot;x2&quot;))</code></pre>
+<pre><code>## 
+## Call:
+## lm(formula = formula, data = data)
+## 
+## Residuals:
+##          1          2          3          4          5 
+## -4.000e-01  4.000e-01  2.000e-01 -3.053e-16 -2.000e-01 
+## 
+## Coefficients: (1 not defined because of singularities)
+##             Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)   1.2000     0.3830   3.133 0.051929 .  
+## x1            2.2000     0.1155  19.053 0.000316 ***
+## x2                NA         NA      NA       NA    
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 0.3651 on 3 degrees of freedom
+## Multiple R-squared:  0.9918, Adjusted R-squared:  0.9891 
+## F-statistic:   363 on 1 and 3 DF,  p-value: 0.0003157</code></pre>
+<p><img src="Function2_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<pre><code>## 
+## Call:
+## lm(formula = formula, data = data)
+## 
+## Coefficients:
+## (Intercept)           x1           x2  
+##         1.2          2.2           NA</code></pre>
+</div>
+</div>
 
 
 

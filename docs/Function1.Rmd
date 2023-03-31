@@ -9,9 +9,9 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# ***1st function: simple linear regression***
+# ***1st function: simple linear regression*** 
 
-### Description
+# Description
 
 The reg_linear function is a function in R that performs a linear regression between two vectors x and y. The main purpose of the function is to fit a straight line to a two-dimensional (x,y) data set and display the fit of the straight line along with the data on a graph.
 
@@ -25,19 +25,9 @@ Finally, the function returns the fitted linear regression model. This allows th
 
 ### Example
 
-```{r}
+```{r message=FALSE, warning=FALSE}
+library("FuncionesRST")
 x <- c(95, 85, 72.5, 60, 15, 25, 2, 3, 4, 52, 100, 47, 37, 27, 99, 45)
 y <- c(75, 25, 12.5, 18, 20, 26, 2, 4, 5, 60, 100, 85, 96, 35, 66, 45) 
 reg_lineal(x, y)
 ```
-
-```         
-Call:
-lm(formula = y ~ x)
-
-Coefficients:
-(Intercept)            x  
-    15.3487       0.5581 
-```
-
-![](images/RGL1plot.png)

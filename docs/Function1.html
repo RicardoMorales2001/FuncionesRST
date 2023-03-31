@@ -11,9 +11,9 @@
 
 <meta name="author" content="Ricardo Morales" />
 
-<meta name="date" content="2023-03-30" />
+<meta name="date" content="2023-03-31" />
 
-<title>Autor y contacto</title>
+<title>Function 1</title>
 
 <script src="site_libs/header-attrs-2.21/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -288,14 +288,62 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Autor y contacto</h1>
+<h1 class="title toc-ignore">Function 1</h1>
 <h4 class="author">Ricardo Morales</h4>
-<h4 class="date">2023-03-30</h4>
+<h4 class="date">2023-03-31</h4>
 
 </div>
 
 
+<div id="st-function-simple-linear-regression" class="section level1">
+<h1><strong><em>1st function: simple linear
+regression</em></strong></h1>
+</div>
+<div id="description" class="section level1">
+<h1>Description</h1>
+<p>The reg_linear function is a function in R that performs a linear
+regression between two vectors x and y. The main purpose of the function
+is to fit a straight line to a two-dimensional (x,y) data set and
+display the fit of the straight line along with the data on a graph.</p>
+<p>The function starts with an if statement to make sure that the
+vectors x and y have the same length. If not, the function issues an
+error message and stops.</p>
+<p>The function then uses the lm function of R to fit a simple linear
+regression model of y on x. The lm function takes as its argument a
+formula, in which the independent variable (x) is to the right of the
+tilde (~) and the dependent variable (y) is to the left.</p>
+<p>After fitting the model, the function uses the plot function to plot
+the data, with x-values on the horizontal axis and y-values on the
+vertical axis. The abline function is used to add the fitted regression
+line to the plot, using the fitted linear regression model as an
+argument and setting the color of the line to red.</p>
+<p>Finally, the function returns the fitted linear regression model.
+This allows the user to inspect the results of the model fit and obtain
+information such as fitted regression line coefficients, fitted y-values
+for any value of x, and model statistics.</p>
+<div id="example" class="section level3">
+<h3>Example</h3>
+<pre class="r"><code>library(&quot;FuncionesRST&quot;)
+x &lt;- c(95, 85, 72.5, 60, 15, 25, 2, 3, 4, 52, 100, 47, 37, 27, 99, 45)
+y &lt;- c(75, 25, 12.5, 18, 20, 26, 2, 4, 5, 60, 100, 85, 96, 35, 66, 45) 
+reg_lineal(x, y)</code></pre>
+<p><img src="Function1_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<pre><code>## 
+## Call:
+## lm(formula = y ~ x)
+## 
+## Coefficients:
+## (Intercept)            x  
+##     15.3487       0.5581</code></pre>
+<pre><code>Call:
+lm(formula = y ~ x)
 
+Coefficients:
+(Intercept)            x  
+    15.3487       0.5581 </code></pre>
+<p><img src="images/RGL1plot.png" /></p>
+</div>
+</div>
 
 
 

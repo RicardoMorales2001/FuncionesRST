@@ -9,22 +9,63 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
+# ***2nd function: multiple linear regression***
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+### Description
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+The multi_reg function is used to fit a multiple linear regression model to a data set. It takes three arguments:
 
-```{r cars}
-summary(cars)
+data: a data frame containing the dependent and independent variables.
+
+dependent_var \-- The name of the dependent variable to use in the model.
+
+independent_vars \-- A list of independent variable names to use in the model.
+
+The function performs some checks to make sure that the arguments have been supplied correctly. First, it checks that data is a dataframe. If not, the execution of the function is stopped with an error message.
+
+Next, it checks if the dependent variable (dependent_var) exists in the dataframe. If not, the function stops and displays an error message that the variable does not exist.
+
+It then verifies that all supplied independent_vars exist in the dataframe. If any of the variables does not exist, the execution of the function is stopped with an error message.
+
+After the checks, the function builds a formula for the multiple linear regression model using the supplied dependent and independent variables. Use the paste function to combine the variables into a string and create the formula.
+
+It then uses the lm function to fit the multiple linear regression model to the given data. The function returns a linear model object (model) that is used to perform the analysis.
+
+Finally, the function prints a summary of the model using the summary function and plots the fitted values against the actual values using the plot function. The function returns the model object (model).
+
+### Example
+
+```{r message=FALSE, warning=FALSE}
+data <- data.frame(x1 = c(1, 2, 3, 4, 5), x2 = c(2, 4, 6, 8, 10), y = c(3, 6, 8, 10, 12))
+multi_reg(data = data, dependent_var = "y", independent_vars = c("x1", "x2"))
 ```
 
-## Including Plots
+```         
+Call:
+lm(formula = formula, data = data)
 
-You can also embed plots, for example:
+Residuals:
+         1          2          3          4          5 
+-4.000e-01  4.000e-01  2.000e-01 -3.053e-16 -2.000e-01 
 
-```{r pressure, echo=FALSE}
-plot(pressure)
+Coefficients: (1 not defined because of singularities)
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)   1.2000     0.3830   3.133 0.051929 .  
+x1            2.2000     0.1155  19.053 0.000316 ***
+x2                NA         NA      NA       NA    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.3651 on 3 degrees of freedom
+Multiple R-squared:  0.9918,	Adjusted R-squared:  0.9891 
+F-statistic:   363 on 1 and 3 DF,  p-value: 0.0003157
+
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+![](images/RLM.png)
+Call:
+lm(formula = formula, data = data)
+
+Coefficients:
+(Intercept) x1 x2
+1.2 2.2 NA
