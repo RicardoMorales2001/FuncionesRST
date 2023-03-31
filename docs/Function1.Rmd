@@ -9,7 +9,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-![](images/640px-Logotipo_Ikiam-02.png)
+![](images/640px-Logotipo_Ikiam-11.png)
 
 # ***1st function: simple linear regression***
 

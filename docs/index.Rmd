@@ -1,5 +1,3 @@
-![](images/640px-Logotipo_Ikiam-01.png){width="407"}
-
 ---
 title: "FuncionesRST"
 author: "Ricardo Morales"
